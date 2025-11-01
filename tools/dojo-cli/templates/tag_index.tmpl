@@ -1,0 +1,9 @@
+# 🏷️ {{.TagName}}
+
+## 📝 Problems
+
+| ID | Title | Source |
+|----|-------|--------|
+{{range .Problems -}}
+| {{printf "%04d" .ID}} | [{{.Title}}](../problems/{{.Folder}}) | {{.Source}} |
+{{end -}}

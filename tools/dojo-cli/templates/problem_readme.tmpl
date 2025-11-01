@@ -1,0 +1,29 @@
+---
+id: {{.ID}}
+title: {{.Title}}
+tags: [{{.Tags}}]
+source: {{.Source}}
+---
+
+# {{.Title}}
+
+**📚 Source**: {{.Source}}
+
+**🏷️ Tags**: {{range $i, $tag := .TagsList}}{{if $i}}, {{end}}[{{$tag}}](../../tags/{{$tag}}.md){{end}}
+
+## 📋 Problem Statement
+
+[Describe the problem here]
+
+## 💡 Approach
+
+[Your thought process and strategy]
+
+## ⚡ Complexity Analysis
+
+- **Time Complexity**: O(?)
+- **Space Complexity**: O(?)
+
+## 💻 Code
+
+See `solution.*` files in this directory.
