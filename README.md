@@ -36,3 +36,32 @@ Problems come from:
 Problems are organized by topic using tag indexes in `/tags/`. 
 
 Tags will be automatically generated as problems are added to the repository.
+
+
+## 🛠️ Tools
+
+### Dojo CLI
+
+A command-line tool to automate repository management:
+
+- **Add new problems** with automatic ID assignment and folder structure
+- **Generate solution files** with language-specific templates
+- **Sync tag indexes** automatically from problem metadata
+- **Validate** problem metadata for completeness
+- **Update** root README with current tags
+
+```bash
+# Install the CLI
+make install
+
+# Create a new problem
+dojo add --title "Two Sum" --tags "array,hash-table" --source "LeetCode" --ext py
+
+# Sync all tags and update README
+dojo sync
+
+# Validate all problems
+dojo validate
+```
+
+See [tools/dojo-cli/README.md](tools/dojo-cli/README.md) for full documentation.
