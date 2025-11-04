@@ -26,4 +26,9 @@ source: {{.Source}}
 
 ## 💻 Code
 
-See `solution.*` files in this directory.
+{{if .Extension -}}
+See the [solution.{{.Extension}}](solution.{{.Extension}}) file.
+{{- else -}}
+[Change the * for the actual file extension]
+See the [solution.*](solution.*) file.
+{{- end}}

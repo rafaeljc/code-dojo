@@ -42,17 +42,19 @@ func GenerateProblem(repoRoot string, problem *models.Problem, extension string)
 
 	// Prepare template data
 	data := struct {
-		ID       int
-		Title    string
-		Tags     string   // Comma-separated for YAML frontmatter
-		TagsList []string // Slice for linking
-		Source   string
+		ID        int
+		Title     string
+		Tags      string   // Comma-separated for YAML frontmatter
+		TagsList  []string // Slice for linking
+		Source    string
+		Extension string // Solution file extension
 	}{
-		ID:       problem.ID,
-		Title:    problem.Title,
-		Tags:     strings.Join(problem.Tags, ", "),
-		TagsList: problem.Tags,
-		Source:   problem.Source,
+		ID:        problem.ID,
+		Title:     problem.Title,
+		Tags:      strings.Join(problem.Tags, ", "),
+		TagsList:  problem.Tags,
+		Source:    problem.Source,
+		Extension: extension,
 	}
 
 	if err := tmpl.Execute(f, data); err != nil {
