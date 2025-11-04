@@ -48,7 +48,8 @@ func UpdateRootREADME(repoRoot string, tags []string) error {
 
 	for _, tag := range tags {
 		displayName := formatTagName(tag)
-		newTagsSection = append(newTagsSection, fmt.Sprintf("- [%s](tags/%s.md)", displayName, tag))
+		tagFileName := strings.ToLower(tag)
+		newTagsSection = append(newTagsSection, fmt.Sprintf("- [%s](tags/%s.md)", displayName, tagFileName))
 	}
 	newTagsSection = append(newTagsSection, "")
 
