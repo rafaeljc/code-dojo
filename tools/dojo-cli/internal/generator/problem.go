@@ -24,9 +24,11 @@ func GenerateProblem(repoRoot string, problem *models.Problem, extension string)
 		return fmt.Errorf("problem already exists: %s", problemDir)
 	}
 
-	// Load template from file
+	// Load template from file with custom functions
 	templatePath := filepath.Join(repoRoot, "tools", "dojo-cli", "templates", "problem_readme.tmpl")
-	tmpl, err := template.ParseFiles(templatePath)
+	tmpl, err := template.New("problem_readme.tmpl").Funcs(template.FuncMap{
+		"lower": strings.ToLower,
+	}).ParseFiles(templatePath)
 	if err != nil {
 		return fmt.Errorf("failed to parse template: %w", err)
 	}

@@ -9,7 +9,7 @@ source: {{.Source}}
 
 **📚 Source**: {{.Source}}
 
-**🏷️ Tags**: {{range $i, $tag := .TagsList}}{{if $i}}, {{end}}[{{$tag}}](../../tags/{{$tag}}.md){{end}}
+**🏷️ Tags**: {{range $i, $tag := .TagsList}}{{if $i}}, {{end}}[{{$tag}}](../../tags/{{lower $tag}}.md){{end}}
 
 ## 📋 Problem Statement
 
