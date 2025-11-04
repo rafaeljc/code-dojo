@@ -69,7 +69,11 @@ func GenerateProblem(repoRoot string, problem *models.Problem, extension string)
 		// Write a basic comment based on the language
 		comment := getCommentForExtension(extension)
 		if comment != "" {
-			fmt.Fprintf(solutionFile, "%s %s\n%s Source: %s\n\n", comment, problem.Title, comment, problem.Source)
+			githubURL := fmt.Sprintf("https://github.com/rafaeljc/code-dojo/tree/main/problems/%s", problem.GetFolder())
+			fmt.Fprintf(solutionFile, "%s %s\n%s Source: %s\n%s Problem: %s\n\n",
+				comment, problem.Title,
+				comment, problem.Source,
+				comment, githubURL)
 		}
 	}
 
