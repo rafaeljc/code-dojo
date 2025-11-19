@@ -33,10 +33,9 @@ Problems come from:
 
 ## 🏷️ Tags
 
-Problems are organized by topic using tag indexes in `/tags/`. 
-
-Tags will be automatically generated as problems are added to the repository.
-
+Problems are organized by topic using tag indexes in `/tags/`.
+- [Backtracking](tags/backtracking.md)
+- [Combinatorics](tags/combinatorics.md)
 
 ## 🛠️ Tools
 
