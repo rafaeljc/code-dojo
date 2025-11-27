@@ -36,6 +36,10 @@ Problems come from:
 Problems are organized by topic using tag indexes in `/tags/`.
 - [Backtracking](tags/backtracking.md)
 - [Combinatorics](tags/combinatorics.md)
+- [Breadth-First Search](tags/breadth-first-search.md)
+- [Depth-First Search](tags/depth-first-search.md)
+- [Graph](tags/graph.md)
+- [Hash Table](tags/hash-table.md)
 
 ## 🛠️ Tools
 
