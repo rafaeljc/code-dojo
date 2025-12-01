@@ -1,7 +1,7 @@
 ---
 id: 2
 title: Clone Graph
-tags: [Graph, Hash Table, Depth-First Search, Breadth-First Search]
+tags: [graph, hash-table, depth-first-search, breadth-first-search]
 source: LeetCode
 ---
 

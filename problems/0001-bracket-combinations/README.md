@@ -1,7 +1,7 @@
 ---
 id: 1
 title: Bracket Combinations
-tags: [Combinatorics, Backtracking]
+tags: [combinatorics, backtracking]
 source: Coderbyte
 ---
 
