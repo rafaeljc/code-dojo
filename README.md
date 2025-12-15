@@ -38,8 +38,10 @@ Problems are organized by topic using tag indexes in `/tags/`.
 - [Breadth First Search](tags/breadth-first-search.md)
 - [Combinatorics](tags/combinatorics.md)
 - [Depth First Search](tags/depth-first-search.md)
+- [Dynamic Programming](tags/dynamic-programming.md)
 - [Graph](tags/graph.md)
 - [Hash Table](tags/hash-table.md)
+- [Matrix](tags/matrix.md)
 - [Topological Sort](tags/topological-sort.md)
 
 ## 🛠️ Tools
