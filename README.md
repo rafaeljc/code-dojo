@@ -34,6 +34,7 @@ Problems come from:
 ## 🏷️ Tags
 
 Problems are organized by topic using tag indexes in `/tags/`.
+- [Array](tags/array.md)
 - [Backtracking](tags/backtracking.md)
 - [Breadth First Search](tags/breadth-first-search.md)
 - [Combinatorics](tags/combinatorics.md)
@@ -43,6 +44,7 @@ Problems are organized by topic using tag indexes in `/tags/`.
 - [Hash Table](tags/hash-table.md)
 - [Matrix](tags/matrix.md)
 - [Topological Sort](tags/topological-sort.md)
+- [Union Find](tags/union-find.md)
 
 ## 🛠️ Tools
 
