@@ -44,6 +44,7 @@ Problems are organized by topic using tag indexes in `/tags/`.
 - [Graph](tags/graph.md)
 - [Hash Table](tags/hash-table.md)
 - [Matrix](tags/matrix.md)
+- [Sliding Window](tags/sliding-window.md)
 - [String](tags/string.md)
 - [Topological Sort](tags/topological-sort.md)
 - [Union Find](tags/union-find.md)
